@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("./TTLakes/TTLakes-Regular.ttf") format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TT Lakes";
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none
+}
