@@ -104,14 +104,14 @@ header {
   width: 304px;
   height: 40px;
   margin: 40px 0 10px 0;
-  padding-left: 20px;
+  padding-left: 14px;
   border-left: 4px solid #41f6d7;
 }
 
 .services-nav {
   display: flex;
   overflow-x: auto;
-  margin-left: 10px;
+  margin-left: 14px;
   scrollbar-width: none;
 }
 
@@ -138,10 +138,44 @@ header {
   border-radius: 4px;
 }
 
-.services-nav::-webkit-scrollbar{
+.services-nav::-webkit-scrollbar {
   display: none;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.about__content {
+  width: 90;
+  height: 288;
+  margin: 20px 16px 10px 16px;
+  max-height: 70px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  overflow: hidden;
+  color: #1b1c21;
+}
+
+.about__read-more {
+  display: flex;
+  justify-content: flex-start;
+  margin: 14px;
+  height: 24px;
+  width: 132px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.about__icon {
+  height: 24px;
+  width: 24px;
+  padding: 4px 4px 8px 4px;
+}
 @media (min-width: 768px) {
   .header__divider {
     display: none;
@@ -159,6 +193,30 @@ header {
     margin-right: 16px;
     gap: 16px;
   }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .about__content {
+    display: flex;
+    width: 300px;
+    height: 208px;
+    margin: 20px 16px 16px 16px;
+    max-height: 146px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    overflow: hidden;
+  }
+  .about__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__read-more {
+    margin: 0 14px 14px 14px;
+  }
 }
 
 @media (min-width: 1120px) {
@@ -174,6 +232,11 @@ header {
     display: flex;
     align-items: center;
     margin-right: 16px;
+    margin-top: 40px;
+  }
+  .main__header {
+    display: flex;
+    justify-content: space-between;
   }
   img.main__icon {
     margin-left: 8px;
@@ -187,5 +250,27 @@ header {
   }
   .services-nav .services-nav__link--additional {
     display: none;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .about__content {
+    display: flex;
+    width: 490px;
+    height: 160px;
+    margin: 20px 16px 16px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+  }
+  .about__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__read-more {
+    margin: 0 14px 14px 14px;
   }
 }
